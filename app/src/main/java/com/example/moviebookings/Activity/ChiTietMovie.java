@@ -1,11 +1,13 @@
-package com.example.moviebookings;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
+package com.example.moviebookings.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.moviebookings.R;
 
 public class ChiTietMovie extends AppCompatActivity {
 
@@ -18,7 +20,7 @@ public class ChiTietMovie extends AppCompatActivity {
         constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it= new Intent(ChiTietMovie.this,Mua.class);
+                Intent it= new Intent(ChiTietMovie.this, Mua.class);
                 startActivity(it);
             }
         });

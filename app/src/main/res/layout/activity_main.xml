@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191926"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/txt_hcm_vn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -25,11 +25,11 @@
             android:textColor="#fff"
             android:textSize="18dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/img_poin"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/img_poin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -39,7 +39,7 @@
             app:srcCompat="@drawable/point" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/img_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
@@ -64,7 +64,7 @@
             android:background="@drawable/border">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txt_dangchieu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -83,7 +83,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txt_sapchieu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -101,7 +101,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/txt_noibat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nổi bật"
@@ -138,7 +138,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/img_movie2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -147,17 +147,17 @@
                     app:srcCompat="@drawable/movie2" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout4"
+                    android:id="@+id/constraintLayoutTwo"
                     android:layout_width="165dp"
                     android:layout_height="50dp"
                     android:background="#1D1D2A"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4">
+                    app:layout_constraintTop_toBottomOf="@+id/img_movie2">
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/txt_tenet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -167,7 +167,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/txt_102min"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -175,59 +175,59 @@
                         android:textColor="#565665"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                        app:layout_constraintTop_toBottomOf="@+id/txt_tenet" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/txt_Review"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="5dp"
                     android:text="38 Reviews"
                     android:textColor="#565665"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-                    app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/img_movie2"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayoutThree" />
 
                 <LinearLayout
-                    android:id="@+id/linearLayout2"
+                    android:id="@+id/linearLayoutThree"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginStart="5dp"
                     android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_movie2"
                     app:layout_constraintStart_toStartOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/img_iconStart1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/staricon" />
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/img_iconStart2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/staricon" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/img_iconStart3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/staricon" />
 
                     <ImageView
-                        android:id="@+id/imageView8"
+                        android:id="@+id/img_iconStart4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/staricon" />
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/img_iconStart5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -235,14 +235,14 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/img_iconStart6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Action, Adventure"
                     android:textColor="#F33262"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayoutThree"
                     app:layout_constraintStart_toStartOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -731,35 +731,35 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/img_movie"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:layout_weight="0.2"
                 app:srcCompat="@drawable/item1" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/img_tiket"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:layout_weight="0.2"
                 app:srcCompat="@drawable/item2" />
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/img_cinames"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:layout_weight="0.2"
                 app:srcCompat="@drawable/item3" />
 
             <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/img_favourite"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:layout_weight="0.2"
                 app:srcCompat="@drawable/item4" />
 
             <ImageView
-                android:id="@+id/imageView14"
+                android:id="@+id/img_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.2"

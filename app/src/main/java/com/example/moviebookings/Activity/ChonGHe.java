@@ -1,8 +1,10 @@
-package com.example.moviebookings;
+package com.example.moviebookings.Activity;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.moviebookings.R;
 
 public class ChonGHe extends AppCompatActivity {
 

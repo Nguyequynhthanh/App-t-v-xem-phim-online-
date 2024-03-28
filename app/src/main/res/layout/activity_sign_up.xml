@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".Activity.SignUp">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="500dp"
@@ -28,24 +28,24 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/edt_Email"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittextlogin"
             android:ems="10"
-            android:hint="UserName"
+            android:hint="Email"
             android:inputType="textPersonName"
             android:paddingHorizontal="50dp"
             android:paddingVertical="10dp"
             android:textColorHint="#707070"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/edt_PassWord"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edt_PassWord"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittextlogin"
@@ -63,12 +63,12 @@
             app:layout_constraintVertical_bias="0.537" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edt_verifypassword"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittextlogin"
             android:ems="10"
-            android:hint="PassWord"
+            android:hint="Verify PassWord"
             android:inputType="textPersonName"
             android:paddingHorizontal="50dp"
             android:paddingVertical="10dp"
@@ -76,7 +76,7 @@
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_PassWord" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
@@ -86,18 +86,19 @@
             android:layout_marginEnd="100dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/tabbar"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/txt_check_taikhoan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn_sigup"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
                 android:textColor="#fff"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:background="@drawable/tabbar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +106,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txt_check_taikhoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -116,7 +117,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/txt_Dangnhap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -124,11 +125,11 @@
             android:text="Đăng nhập ngay"
             android:textColor="#FF3364"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/txt_check_taikhoan" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_cinema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -151,5 +152,5 @@
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_cinema" />
 </androidx.constraintlayout.widget.ConstraintLayout>

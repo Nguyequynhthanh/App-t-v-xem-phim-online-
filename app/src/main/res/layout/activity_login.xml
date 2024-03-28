@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Activity.Login">
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edt_UserName"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittextlogin"
@@ -47,7 +47,7 @@
             app:layout_constraintVertical_bias="0.368" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edt_PassWord"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittextlogin"
@@ -60,7 +60,7 @@
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_UserName" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
@@ -70,18 +70,19 @@
             android:layout_marginEnd="100dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/tabbar"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/txt_check"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn_Sigin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign in"
                 android:textColor="#fff"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:background="@drawable/tabbar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +90,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txt_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -99,20 +100,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView5"
+        <Button
+            android:id="@+id/btn_dangky"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="4dp"
             android:text="Đăng ký ngay"
             android:textColor="#FF3364"
+            android:background="@drawable/tabbar"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/txt_check" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_cinema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -125,7 +127,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -135,5 +137,5 @@
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_cinema" />
 </androidx.constraintlayout.widget.ConstraintLayout>

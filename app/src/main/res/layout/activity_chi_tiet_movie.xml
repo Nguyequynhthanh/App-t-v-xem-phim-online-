@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChiTietMovie">
+    tools:context=".Activity.ChiTietMovie">
 
     <ImageView
         android:id="@+id/imageView15"
@@ -182,7 +182,7 @@
                     android:layout_weight="0.25">
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/txt_ChrisHemsworth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -190,15 +190,16 @@
                         android:textColor="#fff"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_actor1" />
 
                     <ImageView
-                        android:id="@+id/imageView21"
+                        android:id="@+id/img_actor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:srcCompat="@drawable/actor1" />
+                        app:srcCompat="@drawable/actor1"
+                        tools:ignore="MissingConstraints" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -207,12 +208,13 @@
                     android:layout_weight="0.25">
 
                     <ImageView
-                        android:id="@+id/imageView22"
+                        android:id="@+id/img_actor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:srcCompat="@drawable/actor2" />
+                        app:srcCompat="@drawable/actor2"
+                        tools:ignore="MissingConstraints" />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -222,7 +224,7 @@
                         android:textColor="#fff"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_actor2" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -234,7 +236,8 @@
                         android:id="@+id/imageView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/actor3" />
+                        app:srcCompat="@drawable/actor3"
+                        tools:ignore="MissingConstraints" />
 
                     <TextView
                         android:id="@+id/textView24"
